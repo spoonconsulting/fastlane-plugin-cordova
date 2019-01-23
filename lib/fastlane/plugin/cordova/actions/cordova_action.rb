@@ -112,7 +112,7 @@ module Fastlane
           )
         end
 
-        sh "cordova compile #{params[:platform]} #{args.join(' ')} #{ios_args} -- #{android_args}"
+        sh "cordova build #{params[:platform]} #{args.join(' ')} #{ios_args} -- #{android_args}"
       end
 
       def self.set_build_paths(is_release)
